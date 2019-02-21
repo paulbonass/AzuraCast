@@ -1,0 +1,26 @@
+{
+  "name": "azuracast/azuracast",
+  "description": "The AzuraCast standalone radio station management suite.",
+  "license": "Apache-2.0",
+  "authors": [
+    {
+      "name": "Buster Neece",
+      "email": "buster@busterneece.com"
+    }
+  ],
+  "require": {
+    "php": ">=7.2",
+    "azuracast/azuracast-app": "dev-master"
+  },
+  "config": {
+    "preferred-install": "dist"
+  },
+  "prefer-stable": true,
+  "minimum-stability": "dev",
+  "extra": {
+    "installer-paths": {
+      "app": ["type:azuracast-app"],
+      "plugins/{$name}": ["type:azuracast-plugin"]
+    }
+  }
+}

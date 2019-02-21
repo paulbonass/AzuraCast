@@ -3,16 +3,12 @@ node_modules
 
 # Junk/cache files.
 *Thumbs.db
-tmp/cache/*---*
 *.DS_Store
 *.apdisk
-.vagrant
 .idea
 /ubuntu-*-console.log
-.phplint-cache
 
 # Local development files.
-/src/Controller/Frontend/UtilController.php
 /env.ini
 /app/env.ini
 /app/.env
@@ -38,7 +34,8 @@ tmp/cache/*---*
 /docker-compose.override.yml
 /*.tar.gz
 
-# Plugins
-/plugins/*
-/plugins/**/*
-!/plugins/.gitkeep
+# Composer-generated content
+/composer.lock
+/vendor
+/plugins
+/app
